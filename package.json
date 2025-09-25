@@ -1,14 +1,22 @@
 {
   "name": "portfolio_brian",
-  "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "biome check",
+    "format": "biome format --write"
   },
   "dependencies": {
-    "astro": "^5.14.0"
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.5.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "@biomejs/biome": "2.2.0"
   }
 }
